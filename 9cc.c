@@ -7,7 +7,6 @@ int main(int argc, char **argv) {
         fprintf(stderr, "incorrect number of arguments");
         return 1;
     }
-    puts(".intel_syntax noprefix");
     puts(".globl main");
     puts("main:");
     printf("  mov rax, %d\n", atoi(argv[1]));
